@@ -1,0 +1,102 @@
+# print("hello, world")
+# print(30 % 2) #0
+#
+# print(7 % 2) #1
+# print(7 // 2) #3
+#
+# print(100 ** 0.5) #10
+
+# print("Hello, \\test world")
+
+# verse = """первая строка
+# вторая строка
+# третья строка"""
+# print(verse)
+
+# verse = "первая строка\n\
+# вторая строка\n\
+# третья строка"
+# print(verse)
+
+""" сырая строка """
+
+# path = r"C:\Program Files (x86)\dotnet"
+# print(path)
+
+# s = "Hello world!"
+# print(s[0]) #H
+# print(s[-1]) #!
+# print(s[-12]) #H
+# s[0] = str(D) # str[0] = "D" будет ошибка, потому что строки неизменяемые
+# print(s)
+
+
+# s = "Hello world!"
+# print(s[0:12]) # Hello world!
+# print(s[0:5]) # Hello
+# print(s[:5]) # Hello
+# print(s[6:]) # world!
+# print(s[::]) # Hello world!
+# print(s[::2]) # Hlowrd
+# print(s[::-1]) # !dlrow olleH  перевернуть строку
+# print(s[:5] + s[6:]) # Helloworld!
+
+
+# s = "hello"
+# print(len(s)) # 5   длина строки
+#
+# s = "HELLO"
+# print(s.capitalize()) # Hello  -  переводит все символы в маленькие, а первый - в большой
+# print(s)  # метод не перезаписывает строку, а создает новый объект
+
+# s = 'hello'
+# print(s.center(20)) #        hello        метод позволяет отцентрировать строку, по умолчанию слева и справа - пробелы, но можно задать любые символы
+#
+# s = 'hello'
+# print(s.center(20, "*")) # *******hello********
+
+# s = 'hello'
+# print(s.count("l")) # 2 - метод возвращает количество вхождений символов в строку (диапазон можно указать [x:y:z]
+# print(s.count("l", 0, 3)) # 1 - взять символ с первого по третий
+
+# s = "hello"
+# print(s.find("l")) # 2 - возвращает подстроку в строке - первый индекс вхождения или -1
+# print(s.find("a")) # -1  - подстроки нет
+
+# s = 'hello'
+# print(s.index("h"))  # 0 -  метода тоже возвращает индекс, но если символа нет - будет ошибка
+
+
+# s = 'hello'
+# print(s.replace("l", "d")) # heddo - метод заменяет подстроку на другу
+
+# s = 'hello world'
+# print(s.split()) # ['hello', 'world'] - символ, по которому происходит разделение, пробел по умолчанию
+# print(s.split("*")) # ['hello world'] -  если символа такого нет, то строка будет без изменений
+# print(s.split("l"))  # ['he', '', 'o wor', 'd']
+
+# s = 'hello'
+# print(s.isdigit())  # False   - метод проверяет состоит ли строка из цифр (полностью)
+# print(s.isalpha())  # True    - метод проверяет состоит ли строка из букв (полностью) если запятая, то тоже будет False
+
+
+""" ФОРМАТИРОВАНИЕ СТРОК """
+
+name = "John"
+age = 30
+# print("My name is " + name + ". I'm " + str(age))
+# print("My name is %(name)s, I'm %(age)d" %{"name":name, "age":age})          # d - digit, s - string
+# print("My name is %s, I'm %d" %(name, age))
+
+
+# print("Title: %s. Price: %.2f" %("Sony", 40))   #  Title: Sony. Price: 40.00
+
+# print("My name is {}. I'm {}.".format(name, age))
+
+
+""" F-strings """
+
+# print(f"My name is {name}, I'm {age}")
+# print(f"My name is {name}, I'm {age + 5}") #  удобство в том, что при ф-форматировании можно менять значения внутри скобок
+
+# print(f"5 + 2 = {5 + 2}")
